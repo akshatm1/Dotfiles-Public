@@ -64,12 +64,12 @@ The Hyprland RICE is a mix of Catppuccin Mocha and other Catppuccin themes.
 Clone this repository:
 
 ```bash
-git clone https://github.com/akshatm1/Dotfiles.git ~/
+git clone https://github.com/akshatm1/Dotfiles-Public.git ~/
 ```
 
 ### Dependencies
 
-Make sure the following packages (or their equivalents) are installed on your system:
+While this is not the full list of dependencies and I'm sure you guys will have a hard time because of this but make sure the following packages (or their equivalents) are installed on your system:
 
 * **Core**: yay, git, bash, curl, wget, unzip
 * **Desktop**: hyprland, waybar, rofi, thunar, pavucontrol, pulseaudio, NetworkManager
@@ -80,7 +80,7 @@ Make sure the following packages (or their equivalents) are installed on your sy
 
 ### Applying Configs
 
-The caveman approach I use is first backing up my current .config/ directory and .bashrc file:
+The caveman approach I use is, first, backing up my current .config/ directory and .bashrc file:
 
 ```bash
 mv ~/.config/ ~/.config_bak/
@@ -101,6 +101,5 @@ mv ~/Dotfiles ~/.config
 
 ## Disclaimer
 
-* Designed for personal use—your mileage may vary on other systems.
 * Some configs assume Wayland (Hyprland).
-* If you think this will be easy copy-pasting, please mentally prepare yourself for some crying over missing dependencies and screaming at your terminal(In your mind) :)
+* If you think this will be easy copy-pasting, please mentally prepare yourself for some frustration :)
