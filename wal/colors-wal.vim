@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/Akshat/Downloads/Clearnight.jpg"
+let background = "#0b0c1b"
+let foreground = "#c2c2c6"
+let cursor     = "#c2c2c6"
+
+" Colors
+let color0  = "#0b0c1b"
+let color1  = "#08368B"
+let color2  = "#102F99"
+let color3  = "#1255A5"
+let color4  = "#4B4999"
+let color5  = "#106ED0"
+let color6  = "#1697E1"
+let color7  = "#c2c2c6"
+let color8  = "#5a5c6f"
+let color9  = "#08368B"
+let color10 = "#102F99"
+let color11 = "#1255A5"
+let color12 = "#4B4999"
+let color13 = "#106ED0"
+let color14 = "#1697E1"
+let color15 = "#c2c2c6"

@@ -1,0 +1,28 @@
+{
+    "checksum": "51165d16660211e29779c736185b5158",
+    "wallpaper": "/home/Akshat/Pictures/clouds-3.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#12131b",
+        "foreground": "#c3c4c6",
+        "cursor": "#c3c4c6"
+    },
+    "colors": {
+        "color0": "#12131b",
+        "color1": "#7C839B",
+        "color2": "#8D93AF",
+        "color3": "#9A95AE",
+        "color4": "#D4A7BE",
+        "color5": "#9BA6C9",
+        "color6": "#AFACCE",
+        "color7": "#c3c4c6",
+        "color8": "#5c6071",
+        "color9": "#7C839B",
+        "color10": "#8D93AF",
+        "color11": "#9A95AE",
+        "color12": "#D4A7BE",
+        "color13": "#9BA6C9",
+        "color14": "#AFACCE",
+        "color15": "#c3c4c6"
+    }
+}

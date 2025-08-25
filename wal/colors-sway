@@ -1,0 +1,21 @@
+set $wallpaper /home/Akshat/Downloads/Clearnight.jpg
+
+set $background #0b0c1b
+set $foreground #c2c2c6
+
+set $color0 #0b0c1b
+set $color1 #08368B
+set $color2 #102F99
+set $color3 #1255A5
+set $color4 #4B4999
+set $color5 #106ED0
+set $color6 #1697E1
+set $color7 #c2c2c6
+set $color8 #5a5c6f
+set $color9 #08368B
+set $color10 #102F99
+set $color11 #1255A5
+set $color12 #4B4999
+set $color13 #106ED0
+set $color14 #1697E1
+set $color15 #c2c2c6

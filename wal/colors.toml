@@ -1,0 +1,24 @@
+wallpaper = "/home/Akshat/Pictures/black-hole.png"
+
+[colors]
+color0 = "#0c0c13"
+color1 = "#64677D"
+color10 = "#6D7087"
+color11 = "#887C91"
+color12 = "#968EA9"
+color13 = "#C3ABBA"
+color14 = "#D5DAAE"
+color15 = "#e5e4db"
+color2 = "#6D7087"
+color3 = "#887C91"
+color4 = "#968EA9"
+color5 = "#C3ABBA"
+color6 = "#D5DAAE"
+color7 = "#e5e4db"
+color8 = "#a09f99"
+color9 = "#64677D"
+
+[special]
+background = "#0c0c13"
+cursor = "#e5e4db"
+foreground = "#e5e4db"
