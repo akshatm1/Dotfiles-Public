@@ -20,7 +20,6 @@ The Hyprland RICE is a mix of Catppuccin Mocha and other Catppuccin themes.
 * **Window Managers / DE**
 
   * [Hyprland](https://github.com/hyprwm/Hyprland)
-  * XFCE4 (fallback environment)
 
 * **Terminal & Shell**
 
@@ -64,12 +63,12 @@ The Hyprland RICE is a mix of Catppuccin Mocha and other Catppuccin themes.
 Clone this repository:
 
 ```bash
-git clone https://github.com/akshatm1/Dotfiles-Public.git ~/
+git clone https://github.com/akshatm1/Dotfiles.git ~/
 ```
 
 ### Dependencies
 
-While this is not the full list of dependencies and I'm sure you guys will have a hard time because of this but make sure the following packages (or their equivalents) are installed on your system:
+Make sure the following packages (or their equivalents) are installed on your system:
 
 * **Core**: yay, git, bash, curl, wget, unzip
 * **Desktop**: hyprland, waybar, rofi, thunar, pavucontrol, pulseaudio, NetworkManager
@@ -78,9 +77,28 @@ While this is not the full list of dependencies and I'm sure you guys will have 
 
 > Note: package names may vary depending on your distro. Adjust accordingly.
 
-### Applying Configs
+## Applying Configs
 
-The caveman approach I use is, first, backing up my current .config/ directory and .bashrc file:
+### Approach using Bootstrap.sh(Unstable)
+
+First, change the permission of Bootstrap.sh if it's not an executable:
+
+```bash
+chmod +x ~/bootstrap.sh
+```
+
+Then, just run the script file and hope an error does not occur:
+
+```bash
+./bootstrap.sh
+```
+**NOTE:** I have removed hyprland-bin from bootstrap.sh because it caused problems when I was testing my script in a VM, please refer to the original [Hyprland](https://wiki.hypr.land) website for instructions before running the bootstrap script file.
+
+---
+
+### Alternate Approach
+
+The caveman approach I use is first backing up my current .config/ directory and .bashrc file:
 
 ```bash
 mv ~/.config/ ~/.config_bak/
@@ -93,13 +111,12 @@ Then, to copy-paste configs to their respective location:
 mv ~/Dotfiles/.bashrc ~/ 
 mv ~/Dotfiles/wal ~/.cache
 mv ~/Dotfiles ~/.config
-```
-
-...Yeah, that's it. 
+``` 
 
 ---
 
 ## Disclaimer
 
+* Designed for personal use—your mileage may vary on other systems.
 * Some configs assume Wayland (Hyprland).
-* If you think this will be easy copy-pasting, please mentally prepare yourself for some frustration :)
+* If you think this will be easy copy-pasting, please mentally prepare yourself for some crying over missing dependencies and screaming at your terminal(In your mind) :)

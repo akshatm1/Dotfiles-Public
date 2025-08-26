@@ -45,12 +45,12 @@ sudo pacman -S --needed --noconfirm \
 
 echo "[*] Installing AUR packages (yay)..."
 yay -S --needed --noconfirm \
-    hyprland-bin hyprland-workspaces hyprgraphics hyprpicker \
-    waybar rofi swww dunst \
+    hyprland-workspaces \
+    waybar rofi swww dunst pywal \
     papirus-icon-theme catppuccin-gtk-theme-mocha lxappearance gtk-engine-murrine \
     aylurs-gtk-shell-git bibata-cursor-theme-bin \
     ttf-fira-code ttf-firacode-nerd ttf-jetbrains-mono ttf-dejavu-nerd \
-    ttf-ubuntu-font-family ttf-opensans ttf-roboto otf-font-awesome
+    otf-font-awesome
 
 echo "[*] Cloning dotfiles repo..."
 if [ ! -d "$HOME/Dotfiles-Public" ]; then
