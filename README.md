@@ -66,20 +66,9 @@ Clone this repository:
 git clone https://github.com/akshatm1/Dotfiles.git ~/
 ```
 
-### Dependencies
-
-Make sure the following packages (or their equivalents) are installed on your system:
-
-* **Core**: yay, git, bash, curl, wget, unzip
-* **Desktop**: hyprland, waybar, rofi, thunar, pavucontrol, pulseaudio, NetworkManager
-* **Terminal**: alacritty, neovim, btop, htop, fastfetch
-* **Extras**: windscribe, git, gh (GitHub CLI)
-
-> Note: package names may vary depending on your distro. Adjust accordingly.
-
 ## Applying Configs
 
-### Approach using Bootstrap.sh(Unstable)
+### Approach using Bootstrap.sh
 
 First, change the permission of Bootstrap.sh if it's not an executable:
 
@@ -92,13 +81,65 @@ Then, just run the script file and hope an error does not occur:
 ```bash
 ./bootstrap.sh
 ```
-**NOTE:** I have removed hyprland-bin from bootstrap.sh because it caused problems when I was testing my script in a VM, please refer to the original [Hyprland](https://wiki.hypr.land) website for instructions before running the bootstrap script file.
+Here is the basic rundown of what packages bootstrap.sh will install if it's not installed on your system:
+
+* base
+* base-devel 
+* networkmanager 
+* bluez 
+* bluez-utils 
+* pipewire-alsa 
+* pipewire-jack 
+* pulseaudio 
+* pavucontrol 
+* wireplumber 
+* git 
+* github-cli 
+* sudo 
+* wget 
+* curl 
+* unzip 
+* unrar 
+* alacritty 
+* thunar 
+* firefox 
+* evince 
+* neovim 
+* fastfetch 
+* htop
+* grim 
+* wl-clipboard 
+* xclip 
+* tumbler 
+* brightnessctl 
+* pamixer
+* hyprland-workspaces 
+* waybar 
+* rofi 
+* swww 
+* dunst 
+* pywal 
+* papirus-icon-theme 
+* catppuccin-gtk-theme-mocha
+* lxappearance 
+* gtk-engine-murrine 
+* aylurs-gtk-shell-git 
+* bibata-cursor-theme-bin 
+* ttf-fira-code 
+* ttf-firacode-nerd 
+* ttf-jetbrains-mono 
+* ttf-dejavu-nerd 
+* otf-font-awesome
+
+Some are stupidly simple like base or base-devel but just to make sure, I added them as well.
+
+**NOTE:** I have removed hyprland-bin from bootstrap.sh because it caused problems when I was testing my script in a VM, please first refer to the original [Hyprland Wiki](https://wiki.hypr.land) website for instructions to install Hyprland before running the bootstrap script file.
 
 ---
 
 ### Alternate Approach
 
-The caveman approach I use is first backing up my current .config/ directory and .bashrc file:
+The caveman approach you can use is first backing up my current .config/ directory and .bashrc file if you have any:
 
 ```bash
 mv ~/.config/ ~/.config_bak/
@@ -112,6 +153,8 @@ mv ~/Dotfiles/.bashrc ~/
 mv ~/Dotfiles/wal ~/.cache
 mv ~/Dotfiles ~/.config
 ``` 
+
+Pretty useful if you have a clean install.
 
 ---
 
