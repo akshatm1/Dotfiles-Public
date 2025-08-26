@@ -60,44 +60,45 @@ else
 fi
 
 echo "[*] Linking dotfiles with stow..."
+echo "[*] Linking dotfiles with stow failed! The code is currently under maintainence for malfunctioning."
 
 # make sure stow is installed
-if ! command -v stow &>/dev/null; then
-    sudo pacman -S --needed --noconfirm stow
-fi
-
-cd "$HOME/Dotfiles-Public" || exit 1
-
-for dir in */; do
-    pkg="${dir%/}"
-
-    case "$pkg" in
-        wal)
-            echo "[*] Stowing wal into ~/.cache"
-            # backup if needed
-            if [ -e "$HOME/.cache/wal" ] && [ ! -L "$HOME/.cache/wal" ]; then
-                mv "$HOME/.cache/wal" "$HOME/.cache/wal.bak.$(date +%s)"
-            fi
-            stow -t "$HOME/.cache" wal
-            ;;
-        *)
-            echo "[*] Stowing $pkg into ~/.config"
-            if [ -e "$HOME/.config/$pkg" ] && [ ! -L "$HOME/.config/$pkg" ]; then
-                mv "$HOME/.config/$pkg" "$HOME/.config/${pkg}.bak.$(date +%s)"
-            fi
-            stow -t "$HOME/.config" "$pkg"
-            ;;
-    esac
-done
-
-# handle loose files like .bashrc
-if [ -f ".bashrc" ]; then
-    echo "[*] Linking .bashrc into ~/"
-    if [ -e "$HOME/.bashrc" ] && [ ! -L "$HOME/.bashrc" ]; then
-        mv "$HOME/.bashrc" "$HOME/.bashrc.bak.$(date +%s)"
-    fi
-    ln -s "$PWD/.bashrc" "$HOME/.bashrc"
-fi
+# if ! command -v stow &>/dev/null; then
+#     sudo pacman -S --needed --noconfirm stow
+# fi
+#
+# cd "$HOME/Dotfiles-Public" || exit 1
+#
+# for dir in */; do
+#     pkg="${dir%/}"
+#
+#     case "$pkg" in
+#         wal)
+#             echo "[*] Stowing wal into ~/.cache"
+#             # backup if needed
+#             if [ -e "$HOME/.cache/wal" ] && [ ! -L "$HOME/.cache/wal" ]; then
+#                 mv "$HOME/.cache/wal" "$HOME/.cache/wal.bak.$(date +%s)"
+#             fi
+#             stow -t "$HOME/.cache" wal
+#             ;;
+#         *)
+#             echo "[*] Stowing $pkg into ~/.config"
+#             if [ -e "$HOME/.config/$pkg" ] && [ ! -L "$HOME/.config/$pkg" ]; then
+#                 mv "$HOME/.config/$pkg" "$HOME/.config/${pkg}.bak.$(date +%s)"
+#             fi
+#             stow -t "$HOME/.config" "$pkg"
+#             ;;
+#     esac
+# done
+#
+# # handle loose files like .bashrc
+# if [ -f ".bashrc" ]; then
+#     echo "[*] Linking .bashrc into ~/"
+#     if [ -e "$HOME/.bashrc" ] && [ ! -L "$HOME/.bashrc" ]; then
+#         mv "$HOME/.bashrc" "$HOME/.bashrc.bak.$(date +%s)"
+#     fi
+#     ln -s "$PWD/.bashrc" "$HOME/.bashrc"
+# fi
 
 echo "===== BOOTSTRAP FINISHED: $(date) ====="
 echo "[*] Log stored at $LOGFILE"
