@@ -54,6 +54,9 @@ genfstab -U /mnt >> /mnt/etc/fstab
 echo "[*] Entering chroot to configure system..."
 arch-chroot /mnt /bin/bash <<EOF
 
+# Enabling NetworkManager 
+systemctl enable NetworkManager
+
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 hwclock --systohc
 
