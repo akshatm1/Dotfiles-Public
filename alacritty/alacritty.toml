@@ -19,4 +19,4 @@ family = "FiraCode Nerd Font"
 style = "Regular"
 
 [general]
-import = ["/home/Akshat/.cache/wal/colors-alacritty.toml"]
+import = ["~/.cache/wal/colors-alacritty.toml"]
