@@ -70,7 +70,7 @@ git clone https://github.com/akshatm1/Dotfiles.git ~/
 
 ### Approach using Bootstrap.sh
 
-First, change the permission of Bootstrap.sh if it's not an executable:
+First, change the permission of bootstrap.sh if it's not an executable:
 
 ```bash
 chmod +x ~/bootstrap.sh
@@ -81,8 +81,10 @@ Then, just run the script file and hope an error does not occur:
 ```bash
 ./bootstrap.sh
 ```
+
 Here is the basic rundown of what packages bootstrap.sh will install if it's not installed on your system:
 
+* OhMyBash
 * base
 * base-devel 
 * networkmanager 
@@ -133,7 +135,11 @@ Here is the basic rundown of what packages bootstrap.sh will install if it's not
 
 Some are stupidly simple like base or base-devel but just to make sure, I added them as well.
 
+After installing all these using pacman, yay(If yay doesn't exist, it will install it), or Git and then it will use stow to symlink every directory and file in their respective locations.
+
 **NOTE:** I have removed hyprland-bin from bootstrap.sh because it caused problems when I was testing my script in a VM, please first refer to the original [Hyprland Wiki](https://wiki.hypr.land) website for instructions to install Hyprland before running the bootstrap script file.
+
+### Outdated Approach
 
 The caveman approach you can use is first backing up my current .config/ directory and .bashrc file if you have any:
 
