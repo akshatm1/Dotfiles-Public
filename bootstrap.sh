@@ -41,7 +41,7 @@ sudo pacman -S --needed --noconfirm \
     alacritty thunar firefox evince neovim \
     fastfetch htop \
     grim wl-clipboard xclip tumbler \
-    brightnessctl pamixer
+    brightnessctl pamixer jq
 
 echo "[*] Installing AUR packages (yay)..."
 yay -S --needed --noconfirm \
