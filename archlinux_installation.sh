@@ -46,7 +46,7 @@ swapon ${DISK}2
 echo "[*] Partitions created, formatted, and mounted under /mnt."
 
 echo "[*] Installing base packages with pacstrap..."
-pacstrap -K /mnt base linux linux-firmware networkmanager neovim grub efibootmgr sudo openssh sed
+pacstrap -K /mnt base linux linux-firmware networkmanager neovim grub efibootmgr sudo openssh sed git
 
 echo "[*] Generating fstab..."
 genfstab -U /mnt >> /mnt/etc/fstab
