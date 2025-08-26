@@ -135,10 +135,6 @@ Some are stupidly simple like base or base-devel but just to make sure, I added 
 
 **NOTE:** I have removed hyprland-bin from bootstrap.sh because it caused problems when I was testing my script in a VM, please first refer to the original [Hyprland Wiki](https://wiki.hypr.land) website for instructions to install Hyprland before running the bootstrap script file.
 
----
-
-### Alternate Approach
-
 The caveman approach you can use is first backing up my current .config/ directory and .bashrc file if you have any:
 
 ```bash
@@ -154,7 +150,7 @@ mv ~/Dotfiles/wal ~/.cache
 mv ~/Dotfiles ~/.config
 ``` 
 
-Pretty useful if you have a clean install.
+Pretty useful if you have a clean install. I'll add Stow after I learn about it.
 
 ---
 
