@@ -18,5 +18,12 @@ style = "Italic"
 family = "FiraCode Nerd Font"
 style = "Regular"
 
+[window]
+# space between the text and the window border
+padding = { x = 12, y = 12 }
+
+# optional: let Alacritty adjust padding when resizing
+dynamic_padding = true
+
 [general]
 import = ["~/.cache/wal/colors-alacritty.toml"]

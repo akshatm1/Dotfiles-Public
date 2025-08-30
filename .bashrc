@@ -9,7 +9,7 @@ export OSH='/home/Akshat/.oh-my-bash'
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="bakke"
+OSH_THEME="" # "bakke"
 
 # If you set OSH_THEME to "random", you can ignore themes you don't like.
 # OMB_THEME_RANDOM_IGNORED=("powerbash10k" "wanelo")
@@ -160,3 +160,5 @@ fastfetch
 
 # Created by `pipx` on 2025-08-16 14:23:37
 export PATH="$PATH:/home/Akshat/.local/bin"
+
+eval "$(starship init bash)"
